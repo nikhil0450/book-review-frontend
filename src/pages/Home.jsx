@@ -12,7 +12,7 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetchReviews();
+    fetchReviews(currentPage, searchQuery);
   }, [currentPage, searchQuery]);
 
   const fetchReviews = async (page, query) => {
