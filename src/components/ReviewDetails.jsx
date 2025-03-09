@@ -15,7 +15,7 @@ const ReviewDetails = () => {
 
   const fetchReview = async () => {
     try {
-      const res = await axios.get(`https://book-review-backend-ie92.onrender.com/reviews/${id}`);
+      const res = await axios.get(`https://book-review-backend-ie92.onrender.com/api/reviews/${id}`);
       setReview(res.data);
     } catch (err) {
       console.error("Error fetching review:", err);
